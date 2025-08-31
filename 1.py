@@ -3,17 +3,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# df = pd.read_csv("cancer.csv")
-# x = df['Radius (mean)']
-# y = df['Texture (mean)']
+# x = np.random.randn(100)
+# y = np.random.randn(100)
 
-x = np.random.randn(100)
-y = np.random.randn(100)
+df = pd.read_csv("cancer.csv")
+x = df['Radius (mean)']
+y = df['Texture (mean)']
 
-plt.scatter(x, y)
+plt.scatter(x[:50], y[:50], color='red', label='Group 1')
+plt.scatter(x[50:], y[50:], color='blue', label='Group 2')
+
 plt.title("2D Scatter Plot")
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
+plt.legend()
 plt.show()
 
 
