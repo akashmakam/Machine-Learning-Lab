@@ -1,4 +1,4 @@
-# Naive Bayes
+# Naive Bayes Classifier Algorithm
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix
