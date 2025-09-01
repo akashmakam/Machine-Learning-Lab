@@ -22,3 +22,9 @@ def plot_dendrogram(data, method):
     plt.xlabel('Data Points')
     plt.ylabel('Distance')
     plt.show()
+
+print("Proximity matrix:")
+print(proximity_matrix(data))
+
+plot_dendrogram(data, 'single')
+plot_dendrogram(data, 'complete')
